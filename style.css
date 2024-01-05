@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#mynavbar{
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:100;
+    padding: .5rem 5rem .5rem 0;
+    box-shadow:5px 5px 20px rgba(0,0,0,.5);
+    background:black;
+}
+#mynavbar img{
+    border-radius: 50%;
+    margin-right:10px;
+}
+.navbar .navbar{
+    font-size: 25px;
+    font-weight:800;
+    color:orange !important;
+
+}
+#navbarSupportedContent a{
+    color:#faf4f4;
+    border-bottom:2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom:2px solid orange;
+    transition: border-bottom .5s;
+}
+#navbarSupportedContent button{
+    color:white !important;
+    border-radius:15px;
+}
+section{
+    max-width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+#home{
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)) ,url('./images/Best\ Mobile\ Offer\ On\ Amzon\ Great\ Indian\ Fastival.jpg');
+    background-size:1200px;
+    background-position: 200%;
+
+}
+#home h1{
+    font-size:70px;
+    color:orange;
+    font-weight:900;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#home p{
+    color:whitesmoke;
+    font-size:18px;
+
+}
+#home .input-group{
+    width:40%;
+    height:45px;
+}
+
+#about img{
+    width:500px;
+    height:250px;
+}
+#about{
+    background:linear-gradient(rgb(238, 52, 83),rgb(231, 164, 171))
+}
+
+#about h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+}
+#about p{
+    color:white;
+    
+}
+
+#products{
+    background:gray !important;
+}
+
+#products h1{
+    color:white;
+    font-weight: 600;
+}
+#products img{
+    width:250px;
+    height:250px
+}
+.card{
+    height:400px;
+    width:250px;
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+    margin:20px 60px;
+
+}
+.card .card-body p {
+    color: green;
+    font-weight:600;
+}
+.card:hover{
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3);
+    transition:.2s;
+    border:2px solid black;
+         
+}
+
+#contact img{
+    margin-top:30px;
+    height:300px;
+    width:300px;
+    display:block;
+    margin:auto;
+}
+
+form{
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+form input,form textarea{
+    margin:10px 0px;
+}
+
+footer{
+    background:rgb(48, 35, 35);
+    color:white;
+    text-align: center;
+    padding:20px;
+}
+
+
+@media screen and (max-width:576px) {
+    #mynavbar{
+        padding-right:2rem;
+    }
+    .card{
+        margin-left:auto;
+        margin-right: auto;
+    }
+    #home .input-group{
+        height:auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #home .input-group input{
+        width:100%;
+        margin:5px;
+    }
+}
+.carousel-item{
+    min-height: 280px;
+}
